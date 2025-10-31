@@ -54,19 +54,29 @@ body {
   background-color: #8b8153;
 }
 #homepage-title {
-  width: 12.5%;
+  width: 65vw;
   height: 40%;
   position: absolute;
-  top: 10%;
-  left: 1%;
+  top: 20vh;
+  left: 1vw;
   z-index: 2;
 }
 #homepage-title h1 {
-  line-height: 10vw;
+  line-height: 15vh;
   color: #dcd7c9;
-  font-size: 8.333vw;
+  font-size: 6vw;
+}
+#homepage-title hr {
+  color: #dcd7c9;
+  font-size: 4vw;
 }
 #homepage-title span {
   letter-spacing: 0px;
-  font-size: 13.333vw;
+  font-size: 8vw;
+}
+hr {
+  width: 30vw;
+  position: relative;
+  bottom: 5vh;
+  right: 17vw;
 }
