@@ -80,3 +80,9 @@ hr {
   bottom: 5vh;
   right: 17vw;
 }
+
+.subtitulo {
+  color: #c2c2c2;
+  font-size: 3vw;
+  margin-left: 20px;
+}
