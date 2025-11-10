@@ -1,14 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   height: 100vh;
   background-color: #2e3335;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
 ::-webkit-scrollbar {
   display: none;
 }
+
 .outer--container {
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
@@ -20,6 +30,7 @@ body {
   scroll-snap-type: y mandatory;
   scrollbar-width: none;
 }
+
 .inner--container {
   display: flex;
   flex-direction: row;
@@ -28,61 +39,125 @@ body {
   width: 400vw;
   height: 100vh;
 }
+
 .slide {
   width: 100vw;
   height: 100vh;
   scroll-snap-align: center;
-}
-.texto1 {
-  color: #c2c2c2;
-  font-size: 2rem;
+  position: relative;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .um {
   background-color: #000b58;
 }
-
 .dois {
   background-color: #003161;
 }
-
 .tres {
   background-color: #006a67;
 }
-
 .quatro {
   background-color: #8b8153;
 }
-#homepage-title {
-  width: 65vw;
-  height: 40%;
-  position: absolute;
-  top: 20vh;
-  left: 1vw;
-  z-index: 2;
-}
-#homepage-title h1 {
-  line-height: 15vh;
-  color: #dcd7c9;
-  font-size: 6vw;
-}
-#homepage-title hr {
-  color: #dcd7c9;
-  font-size: 4vw;
-}
-#homepage-title span {
-  letter-spacing: 0px;
-  font-size: 8vw;
-}
-hr {
-  width: 30vw;
-  position: relative;
-  bottom: 5vh;
-  right: 17vw;
+
+.texto1 {
+  color: #c2c2c2;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
+#homepage-title {
+  width: 65vw;
+  position: absolute;
+  top: 20vh;
+  left: 5vw;
+  z-index: 2;
+}
+
+#homepage-title h1 {
+  line-height: 1.2;
+  color: #dcd7c9;
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+#homepage-title span {
+  font-size: 8vw;
+  font-weight: 800;
+  letter-spacing: -2px;
+  display: block;
+}
+
+#homepage-title hr {
+  width: 30vw;
+  border: 2px solid #dcd7c9;
+  margin: 2vh 0 0;
+  border-radius: 2px;
+}
+
+/* ===== SLIDE 2 - CONTEÚDO ESTILIZADO ===== */
 .subtitulo {
-  color: #c2c2c2;
+  color: #a8e6ff;
   font-size: 3vw;
-  margin-left: 20px;
+  font-weight: 600;
+  margin-bottom: 3vh;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dados-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 3vh 4vw;
+  max-width: 80vw;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dados-list {
+  list-style: none;
+  color: #e6f1ff;
+  font-size: 1.8vw;
+  line-height: 1.8;
+}
+
+.dados-list li {
+  margin-bottom: 2.5vh;
+  position: relative;
+  padding-left: 3vw;
+}
+
+.dados-list li::before {
+  content: "•";
+  color: #00d4ff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 2vw;
+}
+
+.highlight {
+  color: #00ff9d;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #a8e6ff;
+  font-weight: 500;
+  font-size: 1.6vw;
+  margin: 1.5vh 0 1vh 3vw;
+}
+
+.fonte {
+  font-size: 1.2vw;
+  color: #b0e0ff;
+  font-style: italic;
+  text-align: right;
+  margin-top: 2vh;
+  opacity: 0.9;
 }
