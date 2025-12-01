@@ -193,7 +193,7 @@ body {
   color: #b0e0ff;
   font-style: italic;
   text-align: right;
-  margin-top: 15vh;
+  margin-top: 12vh;
   opacity: 0.9;
 }
 table{
@@ -256,7 +256,12 @@ td, th {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 #cocomelonimg{
-  transform: scale(0.7);
+  transform: scale(0.5);
+  transition: 1s ease;
+}
+#cocomelonimg:hover{
+  cursor: pointer;
+  transform: scale(0.53);
 }
 .cinco--flex{
   display: flex;
@@ -266,4 +271,53 @@ td, th {
 }
 .cinco li{
   margin-top: 80px;
+}
+.progress--bar{
+  width: 67%;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.progress--bar div{
+  height: 100%;
+}
+#progress1{
+  width: 40%;
+  background-color: #94fdfa;
+}
+#progress1 p{
+  position: relative;
+  left: 75%;
+}
+#progress2{
+  width: 56%;
+  background-color: hsl(194, 65%, 62%);
+}
+#progress2 p{
+  position: relative;
+  left: 40%;
+}
+#progress3{
+  width: 42%;
+  background-color: hsl(194, 61%, 38%);
+}
+#progress3 p{
+  position: relative;
+  left: 70%;
+}
+#fonte::before{
+ content: none;
+}
+#frase{
+  font-style: italic;
+  font-size: 2vw;
+  margin-bottom: 12vh;
+  text-align: center;
+  color: #c2bef8;
+}
+.ultima{
+  font-size: 2vw;
+  margin-top: 4vh;
+  color: #e0e0e0;
 }
